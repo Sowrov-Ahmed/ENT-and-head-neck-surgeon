@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!-- index.html · Owner Part 1 · Purpose: Home page shell (split hero is static, other sections are rendered by js/pages/home.js) · Depends on: js/site.js, ui.js, fx.js, layout.js -->
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ENT in Sylhet, Dhaka | Dr. Ashfaqur Rahman Talukder – ENT Specialist</title>
+  <meta name="description" content="Dr. Ashfaqur Rahman Talukder is an ENT and head–neck surgeon in Sylhet and Dhaka Uttara. Book a careful ear, nose and throat consultation with clear explanations."><meta name="theme-color" content="#FFF8F1">
+  <meta property="og:type" content="website"><meta property="og:title" content="ENT in Sylhet, Dhaka"><meta property="og:description" content="Careful ear, nose and throat care in Sylhet and Dhaka Uttara, with clear explanations and honest options.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..800&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script src="js/tailwind-config.js"></script>
+  <script defer src="js/site.js"></script><script defer src="js/ui.js"></script><script defer src="js/fx.js"></script><script defer src="js/layout.js"></script>
+  <script defer src="js/pages/home.js"></script>
+</head>
+<body data-page="home" class="bg-cream font-sans text-cocoa antialiased">
+  <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-full focus:bg-clay-grad focus:px-5 focus:py-2 focus:font-semibold focus:text-white">Skip to main content</a>
+  <div id="site-header"></div>
+  <main id="main" tabindex="-1"><div id="hero-mount"></div>
+    <section id="hero" data-section="hero" data-component="HomeHero" class="relative overflow-x-clip bg-spot-cream pb-20 pt-32 text-cocoa md:pb-28 md:pt-40">
+      <div class="mx-auto grid w-full max-w-7xl items-center gap-14 px-5 sm:px-8 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16">
+        <div class="text-center lg:text-left">
+          <p data-reveal="pop" class="inline-flex items-center gap-2 rounded-full bg-cream px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] text-clay-700 shadow-clay">ENT · Head–neck · Sylhet and Dhaka</p>
+          <h1 data-reveal="rise" data-delay="100" class="mt-6 font-display text-[clamp(2.5rem,5.6vw,4.75rem)] font-semibold leading-[1.04] tracking-tight [&_em]:bg-clay-grad [&_em]:bg-clip-text [&_em]:not-italic [&_em]:text-transparent">Hear clearly. Breathe freely. <em>Speak with ease.</em></h1>
+          <div id="hero-intro"></div>
+        </div>
+        <div class="relative mx-auto w-full max-w-md [perspective:1600px]">
+          <div data-orbit="6" class="relative [transform-style:preserve-3d]">
+            <div id="hero-orb-a" aria-hidden="true" class="pointer-events-none absolute -right-3 -top-8 w-24 [transform:translateZ(-50px)] motion-safe:animate-float sm:-right-8 sm:w-32"></div>
+            <div id="hero-orb-b" aria-hidden="true" class="pointer-events-none absolute -left-3 top-[38%] w-16 [transform:translateZ(-30px)] motion-safe:animate-float-slow sm:-left-9 sm:w-24"></div>
+            <div class="[transform:translateZ(30px)]">
+              <div data-reveal="pop" data-light class="relative rounded-[2.5rem] bg-clay-50 p-3 shadow-clay-lg">
+                <div id="hero-portrait" class="aspect-[4/5] overflow-hidden rounded-[2rem] bg-clay-100"></div>
+              </div>
+            </div>
+            <div class="absolute -right-2 top-[16%] [transform:translateZ(110px)] sm:-right-8">
+              
+            </div>
+            <div class="absolute -left-2 bottom-8 [transform:translateZ(130px)] sm:-left-8">
+              <div class="max-w-[14.5rem] rounded-[1.5rem] bg-cream p-4 shadow-clay-lg motion-safe:animate-float-slow">
+                <p class="text-xs font-semibold uppercase tracking-[0.14em] text-clay-700">Next chamber session</p>
+                <p id="hero-next" class="mt-1 text-sm font-semibold"></p>
+              </div>
+            </div>
+          </div>
+          <div aria-hidden="true" class="mx-auto mt-6 h-6 w-[80%] rounded-full bg-cocoa/25 blur-md"></div>
+        </div>
+      </div>
+    </section>
+    <div id="home-mount"></div>
+  </main>
+  <div id="site-footer"></div>
+</body></html>

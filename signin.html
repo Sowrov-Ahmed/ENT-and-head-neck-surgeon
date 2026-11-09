@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!-- signin.html · Owner Part 1 · Purpose: split-screen sign-in / create account page · Depends on: js/site.js, ui.js, fx.js, layout.js, js/pages/signin.js -->
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sign In or Register | Dr. Ashfaqur Rahman Talukder – ENT Specialist</title>
+  <meta name="description" content="Sign in or create a free account to manage appointments, follow-up visits and reminders with Dr. Ashfaqur Rahman Talukder, ENT specialist in Sylhet and Dhaka."><meta name="theme-color" content="#FFF8F1">
+  <meta property="og:type" content="website"><meta property="og:title" content="Sign in or Create an Account"><meta property="og:description" content="Manage your appointments and follow-ups with Dr. Ashfaqur Rahman Talukder.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..800&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script src="js/tailwind-config.js"></script>
+  <script defer src="js/site.js"></script><script defer src="js/ui.js"></script><script defer src="js/fx.js"></script><script defer src="js/layout.js"></script>
+  <script defer src="js/pages/signin.js"></script>
+</head>
+<body data-page="signin" class="bg-cream font-sans text-cocoa antialiased">
+  <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-full focus:bg-clay-grad focus:px-5 focus:py-2 focus:font-semibold focus:text-white">Skip to main content</a>
+  <div id="site-header"></div>
+  <main id="main" tabindex="-1"><div id="hero-mount"></div>
+    <section id="account" data-section="account" data-component="AccountSplit" class="relative overflow-x-clip bg-spot-blush pb-20 pt-32 text-cocoa md:pb-28 md:pt-40">
+      <div aria-hidden="true" class="absolute inset-x-0 bottom-0 h-1/2 bg-floor-grid [background-size:56px_56px] [mask-image:linear-gradient(to_top,black,transparent)]"></div>
+      <div class="relative mx-auto grid w-full max-w-7xl items-center gap-14 px-5 sm:px-8 lg:grid-cols-2 lg:gap-20">
+        <div class="text-center">
+          <div id="auth-scene" aria-hidden="true" class="pointer-events-none relative mx-auto h-60 w-full max-w-md [perspective:1600px] sm:h-72"></div>
+          <h1 data-reveal="rise" class="mt-8 font-display text-[clamp(2.6rem,6vw,4.75rem)] font-semibold leading-[1.02] tracking-tight [&_em]:bg-clay-grad [&_em]:bg-clip-text [&_em]:not-italic [&_em]:text-transparent">Your records. <em>Your pace.</em></h1>
+          <p data-reveal="rise" data-delay="120" class="mx-auto mt-6 max-w-md text-lg leading-relaxed text-cocoa/75">One account keeps your visits in order, so booking and follow-ups feel calm rather than complicated.</p>
+          <ul id="benefits-mount" class="mx-auto mt-8 max-w-md space-y-4 text-left"></ul>
+        </div>
+        <div id="auth-mount" class="mx-auto w-full max-w-xl"></div>
+      </div>
+    </section>
+    <div id="more-mount"></div>
+  </main>
+  <div id="site-footer"></div>
+</body></html>

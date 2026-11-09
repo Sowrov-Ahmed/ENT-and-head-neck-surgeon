@@ -1,0 +1,125 @@
+/*
+ * js/data/blogs.js — Blog article DETAIL records
+ * Path: js/data/blogs.js · Owner: Part 5 · Purpose: long-form content for the 8 articles (merged with SITE.blogIndex by slug)
+ * Depends on: nothing at load time (read by js/pages/blog.js and js/pages/blog-details.js) · Exposes: window.BLOGS
+ */
+window.BLOGS = [
+  { id: 'blg-001', slug: 'ear-wax-and-cotton-buds', tags: ['Ear wax', 'Ear care', 'Hearing'], views: 1840,
+    summary: 'Why ear wax is protective, why cotton buds and ear candles are unsafe, and when to see an ENT doctor about a blocked ear.',
+    keyTakeaways: ['Ear wax protects the canal and usually clears by itself.', 'Never use cotton buds, hairpins or ear candles inside the ear.', 'Blocked, painful or discharging ears need a doctor, not drops from the pharmacy.'],
+    relatedSlugs: ['sudden-hearing-loss-act-fast', 'child-ear-infections-when-to-worry'], serviceSlugs: ['ear-infection-tympanoplasty', 'hearing-loss-cochlear'],
+    content: [
+      { type: 'p', text: 'Almost every week someone in the chamber says, "Doctor, my ears are dirty." In truth, ear wax is not dirt. It is a thin, slightly sticky coating made by glands in the outer part of the ear canal, and it traps dust, protects the skin and helps keep germs away. On dusty roads in Sylhet or Dhaka, that coating does real work.' },
+      { type: 'h2', text: 'How the ear cleans itself' },
+      { type: 'p', text: 'The skin of the ear canal slowly moves outwards, like a very slow conveyor belt, carrying old wax with it. Chewing and talking help the movement along. By the time wax reaches the opening of the ear it is dry and flaky, and it falls out or washes away with your normal bath. Most people never need to do anything at all.' },
+      { type: 'h2', text: 'Why cotton buds make things worse' },
+      { type: 'p', text: 'A cotton bud works like a ramrod. It pushes wax deeper, packs it against the eardrum and can scratch the delicate canal skin, which then gets infected. Hairpins, keys, matchsticks and ear candles are even less safe. **Ear candling does not remove wax**, and hot wax or ash can burn the ear canal or damage the eardrum. Please do not use any of these.' },
+      { type: 'ul', items: ['Wipe only the outer ear with a soft, damp cloth after your bath.', 'Keep water out of ears that have been infected or operated on, as advised by your doctor.', 'Never put anything smaller than your elbow in your ear, as the old saying goes.', 'Do not let roadside ear cleaners work on you; their tools are rarely clean or safe.'] },
+      { type: 'callout', tone: 'warning', title: 'Do not use drops or oil if the ear discharges', text: 'If your ear has ever discharged, or you may have a hole in the eardrum, do not put drops, oil or water in it without a doctor examining it first. They can reach the middle ear and cause infection.' },
+      { type: 'h2', text: 'When to see a doctor' },
+      { type: 'p', text: 'See an ENT doctor if the ear feels blocked for more than a few days, if hearing drops, or if you have pain, discharge, ringing or dizziness. Hearing aid users and people with narrow canals may need a routine check every six to twelve months. A doctor can look with a microscope, and remove wax safely by gentle suction or a tiny instrument, usually in a few minutes and without pain.' }
+    ] },
+  { id: 'blg-002', slug: 'child-ear-infections-when-to-worry', tags: ['Children', 'Ear infection', 'Glue ear'], views: 2310,
+    summary: 'How to recognise a middle-ear infection in a child, ease the pain safely and know when antibiotics, review or a specialist are needed.',
+    keyTakeaways: ['Many ear infections improve in two to three days with pain relief and rest.', 'Fever that stays high, discharge or swelling behind the ear needs a doctor promptly.', 'Repeated infections or muffled hearing may point to glue ear and deserve a hearing test.'],
+    relatedSlugs: ['ear-wax-and-cotton-buds', 'sinusitis-or-allergy'], serviceSlugs: ['tonsil-adenoid-children', 'ear-infection-tympanoplasty'],
+    content: [
+      { type: 'p', text: 'It is two in the morning, your child is crying and pulling at one ear. Ear infections are among the most common reasons toddlers see a doctor, particularly after a monsoon cold, when germs travel up the narrow tube that links the nose and ear. The good news is that most settle without any drama.' },
+      { type: 'h2', text: 'Signs of an ear infection' },
+      { type: 'p', text: 'Younger children cannot tell you where it hurts. Look for tugging at the ear, crying that is worse when lying down, poor feeding, a fever, restless sleep and not responding to quiet sounds. A child who has just had a cold and then becomes unwell again after two or three days is a classic picture.' },
+      { type: 'h2', text: 'What you can do at home' },
+      { type: 'ol', items: ['Give a pain reliever suitable for your child’s age and weight, as your doctor or pharmacist has advised.', 'Keep your child upright and comfortable, and offer plenty of fluids.', 'Do not put drops, oil or garlic in the ear, and never poke inside it.', 'Review with a doctor if there is no improvement within two to three days.'] },
+      { type: 'p', text: 'Doctors often wait a short time before using an antibiotic, because many infections are viral or clear by themselves. Antibiotics are used when a child is very unwell, is under two with infections in both ears, or is not improving. Finish the course exactly as prescribed if one is given.' },
+      { type: 'callout', tone: 'warning', title: 'See a doctor the same day if', text: 'your child has a high fever that does not settle, swelling or redness behind the ear, pus or fluid coming from the ear, a stiff neck, unusual drowsiness or a twisted face.' },
+      { type: 'h2', text: 'When fluid stays behind' },
+      { type: 'p', text: 'After an infection, fluid can remain behind the eardrum for weeks. This is called glue ear. It can make children seem inattentive at school or turn the television up. If muffled hearing lasts more than three months, or infections keep coming back, a hearing test and an ear examination are worthwhile. A small tube placed in the eardrum, or removal of enlarged adenoids, helps some children.' }
+    ] },
+  { id: 'blg-003', slug: 'sudden-hearing-loss-act-fast', tags: ['Sudden hearing loss', 'Emergency', 'Inner ear'], views: 2960,
+    summary: 'Sudden hearing loss in one ear needs urgent assessment. Learn why the first 72 hours matter and what to do next.',
+    keyTakeaways: ['Sudden hearing loss in one ear is urgent: see a doctor within 72 hours.', 'Treatment started early gives the best chance of recovery, though no result can be promised.', 'Do not wait for it to pass, and do not put drops in the ear.'],
+    relatedSlugs: ['vertigo-dizziness-causes', 'ear-wax-and-cotton-buds'], serviceSlugs: ['hearing-loss-cochlear'],
+    content: [
+      { type: 'p', text: 'You wake up, turn on the phone to your good ear, and realise the other side sounds like it is stuffed with cotton, or is silent. Many people assume it is water, wax or a cold, and wait. Sudden sensorineural hearing loss, a rapid drop in hearing from the inner ear, should never be left to wait.' },
+      { type: 'h2', text: 'Why the first 72 hours matter' },
+      { type: 'p', text: 'The inner ear is delicate and has little ability to repair itself. When treatment, usually a short course of steroid medicine, begins early, the chance of recovering some or all of the hearing is better. Treatment started after a week or two helps less. That is why doctors say you should be seen within 72 hours. The earlier, the better, but even later review is still worthwhile.' },
+      { type: 'h2', text: 'What an assessment involves' },
+      { type: 'ul', items: ['A look in the ear to rule out wax or fluid, which are simple causes.', 'A hearing test (audiometry) to measure the loss accurately.', 'Sometimes a blood test, and an MRI scan to look at the hearing nerve.', 'A treatment plan, with a repeat hearing test to see how you are responding.'] },
+      { type: 'callout', tone: 'tip', title: 'What to do today', text: 'Book the first available visit, or go to an ENT outpatient department. Do not use ear drops, cotton buds or home remedies. Note when it started, whether you have dizziness, ringing or a recent cold, and bring your medicine list.' },
+      { type: 'h2', text: 'If hearing does not return' },
+      { type: 'p', text: 'In many people the cause is never found. Some recover fully, some partly, and some do not. If hearing stays low, modern hearing aids, devices that route sound to the better ear and, in profound loss, cochlear implants can restore useful hearing. Support for ringing in the ear is available too. Seek urgent help if hearing loss comes with weakness of the face, severe headache, double vision or trouble speaking.' }
+    ] },
+  { id: 'blg-004', slug: 'sinusitis-or-allergy', tags: ['Sinusitis', 'Allergy', 'Blocked nose'], views: 1520,
+    summary: 'How to tell sinus infection from allergy or a deviated septum, which treatments help and when an ENT assessment is useful.',
+    keyTakeaways: ['Allergy brings itching, sneezing and clear watery discharge; infection brings pressure, thick discharge and fever.', 'Saline rinses and nasal sprays help many people.', 'A blocked nose lasting beyond three months needs an endoscopic examination.'],
+    relatedSlugs: ['child-ear-infections-when-to-worry', 'snoring-and-sleep-apnoea-signs'], serviceSlugs: ['sinus-endoscopic-surgery', 'septoplasty-rhinoplasty'],
+    content: [
+      { type: 'p', text: 'When the monsoon turns damp or the air in the city is thick with dust, noses rebel. A blocked nose is such a common complaint that people treat it with whatever is at hand, yet the reasons behind it differ widely, and so does the right treatment.' },
+      { type: 'h2', text: 'Clues that point to allergy' },
+      { type: 'p', text: 'Allergic rhinitis tends to bring repeated sneezing, itchy eyes and nose, and clear watery discharge. It often flares with dust, pollen, smoke, strong smells or changes of weather, and it may run in the family. Symptoms last weeks and come in seasons or triggers, with no fever.' },
+      { type: 'h2', text: 'Clues that point to sinusitis' },
+      { type: 'p', text: 'Sinusitis usually follows a cold. You feel pressure over the cheeks or forehead, thick yellow or green discharge, reduced smell and sometimes a mild fever. Acute sinusitis often settles within ten days. Most cases are viral, so antibiotics are not routine. Chronic sinusitis means symptoms beyond twelve weeks.' },
+      { type: 'ul', items: ['Rinse with clean, boiled and cooled or sterile saline, once or twice a day.', 'Steroid or antihistamine nasal sprays, as advised by your doctor, help allergy.', 'Steam and rest ease the pressure for a few days.', 'Avoid known triggers, wash bedding weekly and keep windows shut on dusty days.'] },
+      { type: 'callout', tone: 'tip', title: 'A crooked septum is another cause', text: 'If one side is always blocked, whatever the season, the wall between the nostrils may be deviated. This is a structural problem that medicines cannot straighten, and a short examination with a camera will show it.' },
+      { type: 'h2', text: 'When to see a doctor' },
+      { type: 'p', text: 'See a doctor for a blocked nose lasting more than three months, repeated nosebleeds, loss of smell, or facial pain with high fever. Seek urgent care for swelling around the eye, double vision, severe headache or confusion, as infection can very rarely spread beyond the sinuses.' }
+    ] },
+  { id: 'blg-005', slug: 'snoring-and-sleep-apnoea-signs', tags: ['Snoring', 'Sleep apnoea', 'Sleep study'], views: 2140,
+    summary: 'Warning signs of obstructive sleep apnoea, how a sleep study works and the lifestyle, device and surgical options that can help.',
+    keyTakeaways: ['Loud snoring with pauses in breathing needs a sleep study.', 'Untreated apnoea strains the heart and raises the risk of accidents.', 'Weight, sleep position, devices and sometimes surgery can all help, depending on the cause.'],
+    relatedSlugs: ['sinusitis-or-allergy', 'sore-throat-and-antibiotics'], serviceSlugs: ['snoring-sleep-apnoea'],
+    content: [
+      { type: 'p', text: 'Snoring is often a joke at the breakfast table. But when a spouse says you stop breathing and then wake with a snort, it is no longer a joke. Obstructive sleep apnoea happens when the soft tissues of the throat collapse during sleep and the airway closes again and again through the night.' },
+      { type: 'h2', text: 'Signs you should not ignore' },
+      { type: 'ul', items: ['Loud, regular snoring, with pauses in breathing seen by someone else.', 'Waking with a dry mouth, a headache or a gasp.', 'Feeling exhausted during the day, or dozing off while driving, at work or in a meeting.', 'High blood pressure that is hard to control, or poor concentration and low mood.'] },
+      { type: 'p', text: 'Apnoea is not only for older or heavier men. Women, children with big tonsils and slim adults with a narrow airway are affected too. Many people spend years tired without knowing why, and long bike rides or night shifts become dangerous.' },
+      { type: 'h2', text: 'How it is diagnosed' },
+      { type: 'p', text: 'Loud snoring with pauses in breathing needs a sleep study. This test records your breathing, oxygen level and heart rate through the night, often at home with a small portable device. Your doctor also examines the nose, tongue and throat with a thin camera to see where the airway narrows.' },
+      { type: 'callout', tone: 'warning', title: 'Do not rely on sleeping pills or alcohol', text: 'Alcohol and sedatives relax the throat muscles and can make breathing pauses longer. Avoid them in the evening if you snore heavily.' },
+      { type: 'h2', text: 'What treatment looks like' },
+      { type: 'p', text: 'Treatment depends on the study. Losing weight, sleeping on your side and treating a blocked nose help many people. Mild cases may use a dental device. Moderate to severe apnoea is often treated with a CPAP machine, which gently keeps the airway open with air pressure. Surgery on the nose, tonsils or throat is considered when a clear blockage is found. Book a visit if you recognise these signs, and see a doctor sooner if you feel sleepy while driving.' }
+    ] },
+  { id: 'blg-006', slug: 'vertigo-dizziness-causes', tags: ['Vertigo', 'Dizziness', 'Balance'], views: 1980,
+    summary: 'The common causes of vertigo and dizziness, how benign positional vertigo is treated with a repositioning manoeuvre, and warning signs.',
+    keyTakeaways: ['Most vertigo comes from the inner ear, and positional vertigo is common.', 'A repositioning manoeuvre can often treat it in a single visit.', 'Vertigo with weakness, slurred speech or severe headache is an emergency.'],
+    relatedSlugs: ['sudden-hearing-loss-act-fast', 'ear-wax-and-cotton-buds'], serviceSlugs: ['vertigo-balance'],
+    content: [
+      { type: 'p', text: 'Dizziness is a word people use for many feelings: spinning, swaying, light-headedness or a sense of being about to faint. Doctors begin by asking which one it is, because the cause changes with the description. True vertigo, the sensation that the room is moving, usually comes from the inner ear.' },
+      { type: 'h2', text: 'Common causes' },
+      { type: 'p', text: 'The most frequent cause is benign paroxysmal positional vertigo, where tiny crystals in the inner ear drift into the wrong canal. It brings a short spin, lasting under a minute, when you turn in bed, look up or bend down. Other causes include vestibular neuritis after a viral illness, Ménière’s disease with fluctuating hearing and ringing, migraine, and low blood pressure or dehydration, which is common in Ramadan heat.' },
+      { type: 'h2', text: 'How it is treated' },
+      { type: 'p', text: 'Benign positional vertigo is treated with a repositioning manoeuvre, where your head is moved through a set of positions to guide the crystals back to where they belong. It takes about ten minutes, often works in a single visit and needs no tablets. Balance exercises help when dizziness lingers. Medicines that suppress dizziness are used only for a short time, since they can slow recovery.' },
+      { type: 'ul', items: ['Get up slowly from bed and sit for a moment before standing.', 'Drink enough water through the day, especially in hot weather.', 'Keep the floor free of loose rugs and cables to prevent falls.', 'Note what triggers an episode and how long it lasts, then tell your doctor.'] },
+      { type: 'callout', tone: 'warning', title: 'Go to the emergency department if', text: 'dizziness comes with weakness or numbness, a drooping face, slurred speech, double vision, a sudden severe headache or chest pain. These can signal a stroke or heart problem, and need care at once.' },
+      { type: 'h2', text: 'When to see an ENT doctor' },
+      { type: 'p', text: 'Book a visit if you have repeated spells, hearing changes, ringing or a feeling of fullness in one ear. A hearing test and balance assessment are available at the Upashahar clinic in Sylhet.' }
+    ] },
+  { id: 'blg-007', slug: 'sore-throat-and-antibiotics', tags: ['Sore throat', 'Tonsillitis', 'Antibiotics'], views: 1670,
+    summary: 'Most sore throats are viral and antibiotics do not help them. How doctors decide, soothing measures and signs that need prompt review.',
+    keyTakeaways: ['Most sore throats are caused by viruses and settle by themselves in about a week.', 'Antibiotics do not help viral infections and can cause side effects.', 'Trouble breathing, drooling or a swollen neck need urgent care.'],
+    relatedSlugs: ['child-ear-infections-when-to-worry', 'snoring-and-sleep-apnoea-signs'], serviceSlugs: ['tonsil-adenoid-children', 'voice-throat-head-neck'],
+    content: [
+      { type: 'p', text: 'A scratchy throat during the changeable weather of autumn sends many people straight to the pharmacy to ask for an antibiotic. It is an understandable reaction, but it is not usually what the throat needs. Most sore throats are caused by viruses, the same ones that cause a common cold, and antibiotics do not work against viruses.' },
+      { type: 'h2', text: 'How doctors decide' },
+      { type: 'p', text: 'Bacteria, especially streptococcus, cause a smaller share of sore throats, more often in children. A doctor looks at the throat and tonsils, feels the neck glands and asks about cough, fever and runny nose. A cough and a runny nose point to a virus. High fever, white patches on the tonsils, tender neck glands and no cough raise the chance of bacteria, and a throat swab may be done.' },
+      { type: 'h2', text: 'What helps in the meantime' },
+      { type: 'ul', items: ['Warm fluids, honey for adults and children over one year, and plenty of rest.', 'Gargling with warm salt water several times a day.', 'A pain reliever suited to your age, as advised by your doctor or pharmacist.', 'Staying away from smoke and cold drinks that irritate the throat.'] },
+      { type: 'p', text: 'When an antibiotic is truly needed, the full course matters. Stopping early or taking leftover tablets encourages resistant bacteria, a growing problem in Bangladesh. Ask your doctor whether a prescription is right before you take one.' },
+      { type: 'callout', tone: 'warning', title: 'Urgent signs', text: 'Trouble breathing or swallowing, drooling, a muffled voice, a stiff or swollen neck, or being unable to open the mouth fully need urgent assessment at the nearest emergency department.' },
+      { type: 'h2', text: 'When to see an ENT doctor' },
+      { type: 'p', text: 'Book a visit if a sore throat lasts more than two weeks, if you have a lump in the neck, if your voice stays hoarse, or if tonsillitis keeps returning. Repeated infections, a very large tonsil on one side or blood in the saliva always deserve an examination.' }
+    ] },
+  { id: 'blg-008', slug: 'nosebleed-first-aid', tags: ['Nosebleed', 'First aid', 'Emergency'], views: 2480,
+    summary: 'How to stop a nosebleed correctly by leaning forward and pinching the nose for 10 to 15 minutes, and when to go to the emergency department.',
+    keyTakeaways: ['Sit up, lean forward and pinch the soft part of the nose for 10 to 15 minutes.', 'Never tilt the head back or stuff tissue deep into the nose.', 'Bleeding that will not stop, or follows a head injury, needs the emergency department or 999.'],
+    relatedSlugs: ['sinusitis-or-allergy', 'sore-throat-and-antibiotics'], serviceSlugs: ['septoplasty-rhinoplasty', 'sinus-endoscopic-surgery'],
+    content: [
+      { type: 'p', text: 'A nosebleed at the dinner table, in a classroom or on a motorbike is frightening, and the sight of blood makes it seem worse than it is. Most nosebleeds come from tiny fragile vessels at the front of the nose and are not dangerous. Dry air, nose picking, colds, and hot weather are the usual triggers.' },
+      { type: 'h2', text: 'What to do, step by step' },
+      { type: 'ol', items: ['Sit upright and lean your body and head FORWARD, so blood runs out of the nose, not down the throat.', 'Pinch the soft part of the nose, just below the bony bridge, firmly with thumb and finger.', 'Keep pinching for 10 to 15 minutes without letting go to check. Use a clock.', 'Breathe through your mouth, spit out any blood and stay calm.', 'If it is still bleeding after 15 minutes, pinch again for another 10 to 15 minutes.'] },
+      { type: 'h2', text: 'What to avoid' },
+      { type: 'p', text: 'Do not tilt your head back. Blood then runs down the throat, which can make you cough, vomit or choke, and it does nothing to stop the bleeding. Do not lie flat and do not stuff tissue or cotton far into the nose. After the bleed has stopped, avoid blowing or picking your nose, hot drinks and hard exercise for the rest of the day.' },
+      { type: 'callout', tone: 'tip', title: 'Help prevent the next one', text: 'Keep nails short, use a saline spray or a thin smear of petroleum jelly inside the nostril as advised, and use a humidifier or a damp towel in dry rooms.' },
+      { type: 'h2', text: 'When to go to the emergency department' },
+      { type: 'p', text: 'Go to the nearest emergency department, or call **999**, if bleeding continues after two rounds of pressure, if it follows a fall or blow to the head, if you feel faint or short of breath, or if you take blood-thinning medicine. Frequent nosebleeds in a child or adult also deserve an ENT examination, to find the bleeding point and treat it.' }
+    ] }
+];

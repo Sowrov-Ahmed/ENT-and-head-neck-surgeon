@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!-- 404.html · Owner Part 1 · Purpose: friendly page-not-found screen with helpful links · Depends on: js/site.js, ui.js, fx.js, layout.js, js/pages/404.js -->
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Page Not Found (404) | Dr. Ashfaqur Rahman Talukder – ENT Specialist</title>
+  <meta name="description" content="We could not find that page. Return to the home page, book an appointment with Dr. Ashfaqur Rahman Talukder, or choose the ear, nose or throat care you need."><meta name="theme-color" content="#FFF8F1">
+  <meta property="og:type" content="website"><meta property="og:title" content="Page Not Found (404)"><meta property="og:description" content="That page could not be found. Here are some helpful places to go next.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..800&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script src="js/tailwind-config.js"></script>
+  <script defer src="js/site.js"></script><script defer src="js/ui.js"></script><script defer src="js/fx.js"></script><script defer src="js/layout.js"></script>
+  <script defer src="js/pages/404.js"></script>
+</head>
+<body data-page="404" class="bg-cream font-sans text-cocoa antialiased">
+  <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-full focus:bg-clay-grad focus:px-5 focus:py-2 focus:font-semibold focus:text-white">Skip to main content</a>
+  <div id="site-header"></div>
+  <main id="main" tabindex="-1"><div id="hero-mount"></div>
+    <section id="lost" data-section="lost" data-component="NotFoundHero" class="relative overflow-x-clip bg-spot-cream pb-20 pt-36 text-center text-cocoa md:pb-28 md:pt-44">
+      <div aria-hidden="true" class="absolute inset-x-0 bottom-0 h-1/2 bg-floor-grid [background-size:56px_56px] [mask-image:linear-gradient(to_top,black,transparent)]"></div>
+      <div class="relative mx-auto w-full max-w-7xl px-5 sm:px-8">
+        <div id="lost-scene" aria-hidden="true" class="pointer-events-none absolute inset-0 [perspective:1600px]"></div>
+        <div class="relative">
+          <h1 data-reveal="pop" class="font-display text-[clamp(7rem,30vw,18rem)] font-semibold leading-none tracking-tight"><span class="sr-only">Page not found, error </span><em class="bg-clay-grad bg-clip-text not-italic text-transparent">404</em></h1>
+          <h2 data-reveal="rise" data-delay="120" class="mt-4 font-display text-[clamp(1.75rem,4vw,2.75rem)] font-semibold leading-tight tracking-tight">This page took a wrong turn</h2>
+          <p data-reveal="rise" data-delay="200" class="mx-auto mt-5 max-w-xl text-lg leading-relaxed text-cocoa/75">The link may be old or mistyped. Nothing is wrong with your device, and the pages below will get you back on track.</p>
+          <div data-reveal="rise" data-delay="300" class="mt-10 flex flex-wrap justify-center gap-4">
+            <a href="index.html" class="inline-flex items-center justify-center gap-2 rounded-full bg-clay-grad px-7 py-3.5 font-semibold text-white shadow-clay-btn transition duration-300 ease-out hover:-translate-y-1 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-clay/40">Back to home</a>
+            <a href="appointment.html" class="inline-flex items-center justify-center gap-2 rounded-full bg-cream px-7 py-3.5 font-semibold text-cocoa shadow-clay transition duration-300 ease-out hover:-translate-y-1 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-clay/40">Book an appointment</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="popular" data-section="popular" data-component="PopularSection" class="relative overflow-x-clip bg-spot-blush py-20 text-cocoa md:py-28">
+      <div class="mx-auto w-full max-w-7xl px-5 sm:px-8">
+        <p data-reveal="fade" class="mb-10 text-center text-sm font-semibold uppercase tracking-[0.18em] text-clay-700">Popular pages</p>
+        <div id="popular-mount"></div>
+        <div id="care-mount" class="mx-auto mt-16 max-w-xl"></div>
+      </div>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+</body></html>
